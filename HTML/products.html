@@ -8,6 +8,9 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel= "stylesheet" type="text/css"/>
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -18,13 +21,51 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
 	<!-- Document Title
 	============================================= -->
-	<title>Products | Benchmarq</title>
+	<title>Benchmarq</title>
+
 	<style>
+		
+
+		.revo-slider-emphasis-text {
+			font-size: 64px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			font-family: 'Poppins', sans-serif;
+			padding: 15px 20px;
+			border-top: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+		}
+
+		.revo-slider-desc-text {
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			width: 650px;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		.revo-slider-caps-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.tp-video-play-button { display: none !important; }
+
+		.tp-caption { white-space: nowrap; }
+
 		#logo img {
 			height: 30px !important;
 		}
+
 	</style>
 
 </head>
@@ -37,16 +78,16 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header">
+		<header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
 
 						<!-- Logo
 						============================================= -->
-						<div id="logo">
+						<div id="logo" >
 							<a href="index.html" class="standard-logo" data-dark-logo="benchmarq/images/logo/white_small.png"><img src="benchmarq/images/logo/black_small.png" alt="bench Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="benchmarq/images/logo/white_big.png"><img src="benchmarq/images/logo/black_big.png" alt="bench Logo" ></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="benchmarq/images/logo/white_big.png"><img src="benchmarq/images/logo/black_big.png" alt="bench Logo" ></a>   
 						</div><!-- #logo end -->
 
 
@@ -78,9 +119,6 @@
 
 						</nav><!-- #primary-menu end -->
 
-						<form class="top-search-form" action="search.html" method="get">
-							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-						</form>
 
 					</div>
 				</div>
@@ -88,132 +126,156 @@
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
 
-		<!-- Page Title
+		<!-- Slider
 		============================================= -->
-		<section id="page-title">
+		<section id="slider" class="slider-element revslider-wrap slider-parallax min-vh-100 include-header">
+			<div class="slider-inner">
+				<div id="rev_slider_579_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="default-slider" style="padding:0px;">
+					<!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
+					<div id="rev_slider_579_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.1.4">
+						<ul>   <!-- SLIDE  -->
+							<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/slider/rev/main/s1-thumb.jpg"  data-saveperformance="off"  data-title="Welcome to Canvas">
+								<!-- MAIN IMAGE -->
+						<!--		<img src="benchmarq/sol/main-cover.jpg"  alt="Image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina> -->
+								<!-- LAYERS -->
 
-			<div class="container clearfix">
-				<h1>Products</h1>
-				<span></span>
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="Final.html">Home</a></li>
-					<li class="breadcrumb-item"><a href="products.html">Products</a></li>
-					<!--<li class="breadcrumb-item active" aria-current="page">Services</li>-->
-				</ol>
+								<!-- LAYER NR. 1 -->
+								<div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
+									data-forcerewind="on"
+									data-volume="mute"
+									data-videowidth="100%"
+									data-videoheight="100%"
+									data-videomp4="benchmarq/images/main-vid.mp4"
+									data-videopreload="preload"
+									data-videoloop="none"
+									data-forceCover="1"
+									data-aspectratio="16:9"
+									data-autoplay="true"
+									data-autoplayonlyfirsttime="false"
+									data-nextslideatend="true"
+									>
+								</div>
+
+								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-10','-10']"
+								data-fontsize="['50','50','50','36']"
+								data-lineheight="['50','50','60','50']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1200"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-textAlign="center"
+								data-width="['800','800','560','400']"
+								data-height="none"
+								data-whitespace="['normal','nowrap','normal','normal']"
+								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: normal; text-shadow: 2px 2px 4px #000000;">The Next Generation of Predictive Analytics</div>
+
+
+
+								<div class="tp-caption ltl tp-resizeme"
+								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+								data-y="['middle','middle','middle','middle']" data-voffset="['170','170','210','210']"
+								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
+								data-speed="800"
+								data-start="1550"
+								data-easing="easeOutQuad"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.01"
+								data-endelementdelay="0.1"
+								data-endspeed="1000"
+								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"><a href="about.html" class="button button-border button-white button-light button-large button-rounded text-right m-0"><span>Learn more</span> <i class="icon-angle-right"></i></a></div>
+
+							</li>
+						
+
+						</ul>
+					</div>
+
 			</div>
+		</section>
 
-		</section><!-- #page-title end -->
-
-		<!-- Content
-		============================================= -->
 		<section id="content">
-			<div class="content-wrap">
-				<div class="container clearfix">
-
-					<div class="row col-mb-50">
-						<div class="col-md-4">
-							<div class="feature-box media-box flex-column">
-								<div class="fbox-media">
-									<h3 style= "text-align: center;">INSIGHT</h3>
-									<img src="benchmarq/images/risk.png" alt="Why choose Us?">
-									<p style= "text-align: center;">Real Time Information Streaming Kit. Real time access to news and events all over the world for quick analysis</p>
-								</div>
-								<div class="fbox-content px-0">
-									
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="feature-box media-box">
-								<div class="fbox-media">
-									<h3 style= "text-align: center;">RISK</h3>
-									<img src="benchmarq/images/insight.png" alt="Why choose Us?">
-									<p style= "text-align: center;">Advanced data visualization of real time events anywhere in the world. Real time social network analysis, social and political stability and in-depth analysis  of news and events</p>							</div>
-								<div class="fbox-content px-0">
-								</div>
-							</div>
-						</div>
-
-
-						<div class="col-md-4">
-							<div class="feature-box media-box flex-column">
-
-								<div class="fbox-media">
-									<h3 style= "text-align: center;">SAMME</h3>
-									<img src="benchmarq/images/samme.png" alt="Why choose Us?">
-									<p style= "text-align: center;">Serverless Automated Machine learning Modeling Engine. The next generation of predictive analytics</p>
-								</div>
-								<div class="fbox-content px-0">
-									
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="container">
-					<div class="row align-items-center col-mb-50">
-						<div class="col-md-6 order-md-last">
-							<!--<canvas id="chart-radar"></canvas>-->
-							<img id ="img-insight"data-animate="fadeIn" class="aligncenter" src="benchmarq/images/risk.png" alt="samme" >
-						</div>
-
-						<div class="col-md-6 text-center text-md-left">
-							<div class="heading-block border-bottom-0">
-								<h2>RISK</h2>
-								<!--<span>Benchmarking your website's performance helps you make great choices for your business.</span>-->
-							</div>
-							<p style="font-size: 18px;">By using big data culled from a wide array of sources, we have developed our RISK (Real-time Information Streaming Kit) proprietary software platform that allows users to access thousands of exabytes of real-time data to crawl through a multitude of events, trends, analytics and news articles across the globe.</p>
-							<p style="font-size: 18px;">The Benchmarq RISK software kit integrates a wide variety of batch and streaming data that is updated automatically and easily accessible from your secure desktop and mobile devices.</p>
-							<p style="font-size: 18px;">The RISK software can continuously scan different regions all over the world to find out what events are currently happening; what people are discussing; how the economy is doing; determine the overall sentiment and tone of coverage; and how that tone may impact that region either positively or negatively.</p>
-
-						</div>
-					</div>
-					<div class="line"></div>
+			
+				<div class="row align-items-stretch">
 					
-
-					<div class="row align-items-center col-mb-50">
-						<div class="col-md-6">
-							<!--<canvas id="chart-doughnut"></canvas>-->
-							<img data-animate="fadeIn" class="aligncenter" src="benchmarq/images/insight.png" alt="risk" >
+					<a class="button button-full button-dark center text-right" style="background-color: #34495e;">
+						<div class="container clearfix">
+							<p><b>About Us</b></p>
 						</div>
+					</a>
 
-						<div class="col-md-6 text-center text-md-left">
-							<div class="heading-block border-bottom-0">
-								<h2>INSIGHT</h2>
-								<!--<span>Reports let you easily track and analyze your product sales, orders, and payments.</span>-->
-							</div>
-							<p style="font-size: 18px;">Sometimes, simply streaming real-time data is not sufficient to get a true sense of what’s happening on the ground in different areas throughout the world. Decision-makers need an array of tools at their disposal in order to make sense of the billions of data points and how they all fit together.</p>
-							<p style="font-size: 18px;">Our INSIGHT software solution takes real-time data and transforms these points of interest into customizable charts and graphs for detailed visualization. In addition, INSIGHT provides *smart text technology in the form of our proprietary AI algorithms that help you interpret and decipher your charts, graphs and other visuals, resulting in an easy to read document to be used in your final reports.</p>
+					<div class="col-lg-6 dark col-padding overflow-hidden" style="background-color: #34495e; height: 500px;">
+						<div>
+							<h3 class="text-uppercase" style="font-weight: 600;">INSIGHT</h3>
+							<p style="line-height: 1.8;"> Real Time Information Streaming Kit. Real time access to news and events all over the world for quick analysis</p>
+							<a href="about.html" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<li class="w3-xxxlarge"> <i class="icon-cog bgicon" ></i> </li>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 dark col-padding overflow-hidden" style="background-color: #1abc9c; height: 500px;">
+						<div>
+							<h3 class="text-uppercase" style="font-weight: 600;">RISK</h3>
+							<p style="line-height: 1.8;">Advanced data visualization of real time events anywhere in the world. Real time social network analysis, social and political stability and in-depth analysis of news and events</p>
+							<a href="about.html" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<i class="icon-bulb bgicon"></i>
 						</div>
 					</div>
 
-					<div class="line"></div>
-
-					<div class="row align-items-center col-mb-50">
-						<div class="col-md-7 order-md-last">
-							<!--<canvas id="chart-radar"></canvas>-->
-							<img data-animate="fadeIn" class="aligncenter" src="benchmarq/images/samme.png" alt="samme">
-						</div>
-
-						<div class="col-md-5 text-center text-md-left">
-							<div class="heading-block border-bottom-0">
-								<h2>SAMME</h2>
-								<!--<span>Benchmarking your website's performance helps you make great choices for your business.</span>-->
-							</div>
-							<p style="font-size: 17px;">Benchmarq strongly believes that governments and organizations work best when they use a proactive approach to risk mitigation. Instead of waiting for major crises to occur, these entities would do well to proactively prepare for a wide array of scenarios and expect some of these risks to occur with some degree of frequency. The question remains, however, which future scenarios should decision-makers expect and prepare for? Benchmarq’s flagship product is our Serverless Automated Machine-learning and Modeling Engine (SAMM-E). We developed state-of-the-art machine learning algorithms, powered by artificial intelligence, to help make predictions about political, social, economic, environmental, geospatial and other events based on historical batch and real-time streaming data.</p>
-							<p style="font-size: 17px;">Benchmarq SAMME is designed to harness real time, streaming data to give accurate forecasting and prediction models. Our team carefully calibrates unique machine learning models to deliver accurate results. We perform thousands of simultaneous calculations and “what-if” scenarios to improve robustness in forecasts.</p>
-													
+					<div class="col-lg-6 dark col-padding overflow-hidden" style="background-color: #e74c3c; height: 500px;">
+						<div>
+							<h3 class="text-uppercase" style="font-weight: 600;">SAMME</h3>
+							<p style="line-height: 1.8;">Serverless Automated Machine learning Modeling Engine. The next generation of predictive analytics</p>
+							<a href="about.html" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<i class="icon-thumbs-up bgicon"></i>
 						</div>
 					</div>
+
+					<div class="col-lg-6 dark col-padding overflow-hidden" style="background-color: #34495e; height: 500px;">
+						<div>
+							<h3 class="text-uppercase" style="font-weight: 600;">Our Mission</h3>
+							<p style="line-height: 1.8;"> Our proprietary software platform offers aninnovative approach for governments and other organizations. to help mitigate risk and be more proactive in providing goods and services to its stakeholders.</p>
+							<a href="about.html" class="button button-border button-light button-rounded text-uppercase m-0">Read More</a>
+							<i class="icon-cog bgicon"></i>
+						</div>
+					</div>
+				</div>				
+			
+		</section>
+
+
+				<div class="section parallax dark mt-0 mb-0 border-bottom-0" style="background-color:rgb(219, 219, 223); margin-bottom: 0px">
+
+					<div class="heading-block ">
+						<h1  class="center" style="color: rgb(17, 15, 107); font-size: 70px;">Big Problems.</h1>
+						<h1  class="center" style="color: rgb(17, 15, 107); font-size: 70px;">Big Data Solutions.</h1>
+						<!--<span>Built with passion &amp; intuitiveness in mind. Canvas is a masterclass piece of work presented to you.</span>-->
+					</div>
+
+					<div >
+						<img src="benchmarq/images/portfolio.png" data-animate="fadeInUP" alt="Chrome">
+						<!--<img src="images/services/ipad3.png" style="position: absolute; top: 0; left: 0;" data-animate="fadeInUp" data-delay="300" alt="iPad">-->
+					</div>
+
 
 				</div>
+
+
 
 			</div>
 		</section><!-- #content end -->
+		<!-- Content
+		============================================= -->
+		
 
-				<!-- Footer
+		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
 			<div class="container">
@@ -292,120 +354,94 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
-	<!-- Charts JS
-	============================================= -->
-	<script src="js/chart.js"></script>
-	<script src="js/chart-utils.js"></script>
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 
 	<script>
 
-		var randomScalingFactor = function() {
-			return Math.round(Math.random() * 100);
-		};
+		var tpj = jQuery;
+		var revapi202;
+		var $ = jQuery.noConflict();
 
-		var config = {
-			type: 'doughnut',
-			data: {
-				datasets: [{
-					data: [
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-					],
-					backgroundColor: [
-						window.chartColors.red,
-						window.chartColors.orange,
-						window.chartColors.yellow,
-						window.chartColors.green,
-						window.chartColors.blue,
-					],
-					label: 'Dataset 1'
-				}],
-				labels: [
-					"Red",
-					"Orange",
-					"Yellow",
-					"Green",
-					"Blue"
-				]
-			},
-			options: {
-				responsive: true,
-				legend: {
-					display: false,
-					position: 'top',
-				},
-				title: {
-					display: false,
-					text: 'Doughnut Chart'
-				},
-				animation: {
-					animateScale: true,
-					animateRotate: true
-				}
+		tpj(document).ready(function() {
+			if (tpj("#rev_slider_579_1").revolution == undefined) {
+				revslider_showDoubleJqueryError("#rev_slider_579_1");
+			} else {
+				revapi202 = tpj("#rev_slider_579_1").show().revolution({
+					sliderType: "standard",
+					jsFileLocation: "include/rs-plugin/js/",
+					sliderLayout: "fullscreen",
+					dottedOverlay: "none",
+					delay: 9000,
+					responsiveLevels: [1140, 1024, 778, 480],
+					visibilityLevels: [1140, 1024, 778, 480],
+					gridwidth: [1140, 1024, 778, 480],
+					gridheight: [728, 768, 960, 720],
+					lazyType: "none",
+					shadow: 0,
+					spinner: "off",
+					stopLoop: "on",
+					stopAfterLoops: 0,
+					stopAtSlide: 1,
+					shuffle: "off",
+					autoHeight: "off",
+					fullScreenAutoWidth: "off",
+					fullScreenAlignForce: "off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					disableProgressBar: "on",
+					hideThumbsOnMobile: "off",
+					hideSliderAtLimit: 0,
+					hideCaptionAtLimit: 0,
+					hideAllCaptionAtLilmit: 0,
+					debugMode: false,
+					fallbacks: {
+						simplifyAll:"off",
+						disableFocusListener:false,
+					},
+					parallax: {
+						type:"mouse",
+						origo:"slidercenter",
+						speed:300,
+						levels:[2,4,6,8,10,12,14,16,18,20,22,24,49,50,51,55],
+					},
+					navigation: {
+						keyboardNavigation:"off",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "horizontal",
+							drag_block_vertical: false
+						},
+						arrows: {
+
+
+						}
+					}
+				});
+				revapi202.on("revolution.slide.onloaded",function (e) {
+					setTimeout( function(){ SEMICOLON.slider.sliderDimensions(); }, 200 );
+				});
+
+				revapi202.on("revolution.slide.onchange",function (e,data) {
+					SEMICOLON.slider.revolutionSliderMenu();
+				});
 			}
-		};
-
-
-		// Radar Chart
-
-		var color = Chart.helpers.color;
-		var configRadar = {
-			type: 'radar',
-			data: {
-				labels: [["Eating", "Dinner"], ["Drinking", "Water"], "Sleeping", ["Designing", "Graphics"], "Coding", "Cycling", "Running"],
-				datasets: [{
-					label: "My First dataset",
-					backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-					borderColor: window.chartColors.red,
-					pointBackgroundColor: window.chartColors.red,
-					data: [
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor()
-					]
-				}, {
-					label: "My Second dataset",
-					backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-					borderColor: window.chartColors.blue,
-					pointBackgroundColor: window.chartColors.blue,
-					data: [
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor(),
-						randomScalingFactor()
-					]
-				},]
-			},
-			options: {
-				legend: {
-					display: false
-				},
-				title: {
-					display: false
-				},
-				scale: {
-				  ticks: {
-					beginAtZero: true
-				  }
-				}
-			}
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById("chart-doughnut").getContext("2d");
-			window.myDoughnut = new Chart(ctx, config);
-			window.myRadar = new Chart(document.getElementById("chart-radar"), configRadar);
-		};
+		}); /*ready*/
 
 	</script>
 
